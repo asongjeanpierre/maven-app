@@ -5,9 +5,6 @@ files:
     destination: /home/ec2-user
 hooks:
   BeforeInstall:
-    - location: install_dependencies.sh
-      timeout: 300
-      runas: root
     - location: start_server.sh
       timeout: 300
       runas: root
