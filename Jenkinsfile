@@ -5,6 +5,7 @@ node{
     }
    stage('Environment') {
       sh 'git --version'
+      sh '$(date)
       sh 'printenv'
     }
   stage('Build') {
