@@ -1,7 +1,7 @@
 node{
   stage('Checkout') {
      sh 'rm -rf maven-app'
-     sh 'git clone https://github.com/santoshnist2011/test1-maven.git'
+     sh 'git clone https://github.com/asongjeanpierre/maven-app.git'
     }
    stage('Environment') {
       sh 'git --version'
@@ -9,7 +9,7 @@ node{
     }
   stage('Build') {
      sh '''
-     cd test1-maven
+     cd maven-app
      ls -al
      mvn test
      mvn install
