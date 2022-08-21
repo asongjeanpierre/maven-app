@@ -1,6 +1,6 @@
 node{
   stage('Checkout') {
-     sh 'rm -rf test1-maven'
+     sh 'rm -rf maven-app'
      sh 'git clone https://github.com/santoshnist2011/test1-maven.git'
     }
    stage('Environment') {
